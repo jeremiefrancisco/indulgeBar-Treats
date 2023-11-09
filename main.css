@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bayon&display=swap');
+
+body {
+    margin: 0;
+}
+nav li {
+    font-family: 'Bayon', sans-serif;
+    transition: 0.25s;
+}
+nav li:hover {
+    color: #C08B89;
+}
+#first-column img, #third-column img {
+    width: 30px;
+    height: auto;
+}
+#first-layer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#second-layer {
+    text-align: center;
+}
+#first-column {
+    display: grid;
+    grid-template-rows: 50px 50px 30px;
+}
+#first-column p {
+    font-family: 'Homemade Apple', cursive;
+    text-align: center;
+}
+#first-row-icons {
+    text-align: center;
+}
+#first-row-icons a {
+    padding-top: 20px;
+}
+#second-row-icons {
+    text-align: center;
+}
+#second-row-icons a {
+    padding-top: 20px;
+}
+#second-column {
+    text-align: center;
+}
+#second-column img {
+    width: 80px;
+    height: auto;
+    margin-top: 50px;
+}
+#third-column {
+    text-align: center;
+}
+#third-column img {
+    margin-top: 50px;
+}
+#nav-links {
+    list-style: none;
+}
+#nav-links li {
+    display: inline;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 20px;
+}
+#nav-links a {
+    color: #434343;
+    text-decoration: none;
+}
+
+
+
+.sale-tag {
+    height: 50px;	
+    overflow: hidden;
+    position: relative;
+    background-color: #C08B89;
+}
+.sale-tag h3 {
+    font-family: 'Bayon', sans-serif;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    /* Starting position */
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%);	
+    transform:translateX(100%);
+    /* Apply animation to this element */	
+    -moz-animation: example1 15s linear infinite;
+    -webkit-animation: example1 15s linear infinite;
+    animation: example1 15s linear infinite;
+}
+   /* Move it (define the animation) */
+@-moz-keyframes example1 {
+    0%   { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes example1 {
+    0%   { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes example1 {
+    0%   { 
+    -moz-transform: translateX(100%); /* Firefox bug fix */
+    -webkit-transform: translateX(100%); /* Firefox bug fix */
+    transform: translateX(100%); 		
+    }
+    100% { 
+    -moz-transform: translateX(-100%); /* Firefox bug fix */
+    -webkit-transform: translateX(-100%); /* Firefox bug fix */
+    transform: translateX(-100%); 
+    }
+}
+
+
+#index-main {
+    width: 100%;
+    height: auto;
+}
+
+.titles {
+    font-family: 'Homemade Apple', cursive;
+    color: #C08B89;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.img-box {
+    text-align: center;
+    position: relative;
+}
+#index-1 {
+    width: 70%;
+    height: auto;
+}
+#index-2 {
+    width: 70%;
+    height: 272px;
+}
+#img-overlay {
+    width: 70%;
+    height: 272px;
+    position: absolute;
+    top: 0px;
+    left: 15%;
+    transition: 1s;
+}
+#img-overlay:hover {
+    background: rgba(203, 203, 203, 0.5);
+}
+#text-overlay {
+    transition: 1s;
+    height: 85%;
+    color: #3E3E3E;
+    opacity: 0%;
+}
+
+
+.line-spacer {
+    width: 70%;
+    border: 1px solid #C084A0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+#how-to-order-space {
+    width: 70%;
+    border: 1px solid #C084A0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+#how-to-order-space p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #C084A0;
+    text-align: center;
+}
+
+
+footer {
+    background-color: #C08B89;
+    font-family: 'Bayon', sans-serif;
+    text-align: center;
+    height: auto;
+}
+footer p {
+    font-size: 24px;
+}
+footer li {
+    font-size: 24px;
+    list-style: none;
+    color: black;
+    transition: 0.5s;
+}
+footer li:hover {
+    color: white;
+}
+footer ul {
+    padding-left: 0;
+}
+footer a {
+    text-decoration: none;
+}
+footer h4 {
+    font-size: 24px;
+}
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 300px;
+}
+#second-column img {
+    width: 80px;
+    margin-top: 125px;
+}
+#third-column button {
+    color: white;
+    background-color: #4D4C4A;
+    border: none;
+    font-family: 'Bayon', sans-serif;
+    width: 240px;
+    height: 60px;
+    font-size: 25px;
+    border-radius: 20px;
+}
